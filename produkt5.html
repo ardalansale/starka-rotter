@@ -43,29 +43,21 @@
             <li><a href="varukorg.html"><i class="fa-solid fa-cart-shopping"></i> Varukorg <span id="small-basket-mobile"></span></a></li>
         </ul>
     </nav>
+    <main class="product-page">
+        <div class="product-detail">
+            <picture>
+                <source srcset="assets/produkt5.webp" type="image/webp">
+                <img src="assets/produkt5.jpg" alt="Bild på en Kimbalafikus">
+            </picture>
 
-    <main class="cart-page">
-        <h1>Varukorg</h1>
-
-        <table>
-            <thead>
-                <tr>
-                <td>Bild</td>
-                <td>Artikelnr</td>
-                <td>Varunamn</td>
-                <td>Antal</td>
-                <td>Pris</td>
-                </tr>
-            </thead>
-            
-            <tbody id="checkout"></tbody>
-        </table>
-
-        <div class="cart-buttons">
-        <button class="btn" onclick="checkoutBasket()">Slutför köp</button>
-        <button class="btn btn-outline" onclick="emptyBasket()">Töm varukorg</button>
+            <div class="product-info">
+                <h1>Kimbalafikus</h1>
+                <p class="product-latin"><em>Ficus cyathistipula</em></p>
+                <p>En elegant och tålig växt med mörkgröna, glänsande blad som ger rummet ett lugnt och harmoniskt uttryck. Den trivs bäst i ljust till halvskuggigt läge och vill ha jämn fukt i jorden utan att stå i vatten.</p>
+                <p class="product-price">130:-</p>
+                <button class="btn" onclick="addToBasket(this, '005', 'Kimbalafikus', 130, 'assets/produkt5.webp')">Lägg i varukorg</button>
+            </div>
         </div>
-
     </main>
 
     <footer>

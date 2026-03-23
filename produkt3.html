@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mossranka - Starka Rötter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="Starka Rötter logotyp">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="om.html">Om oss</a></li>
+                <li><a href="produkter.html">Produkter</a></li>
+                <li>
+                <a href="varukorg.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="small-basket"></span>
+                </a>
+                </li>
+            </ul>
+
+            <button class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobilmeny -->
+        <ul class="mobile-menu" id="mobile-menu">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="om.html">Om Oss</a></li>
+            <li><a href="produkter.html">Produkter</a></li>
+            <li><a href="varukorg.html"><i class="fa-solid fa-cart-shopping"></i> Varukorg <span id="small-basket-mobile"></span></a></li>
+        </ul>
+    </nav>
+    <main class="product-page">
+        <div class="product-detail">
+            <picture>
+                <source srcset="assets/produkt3.webp" type="image/webp">
+                <img src="assets/produkt3.jpg" alt="Bild på en Mossranka">
+            </picture>
+
+            <div class="product-info">
+                <h1>Mossranka</h1>
+                <p class="product-latin"><em>Philodendron squamiferum</em></p>
+                <p>En vacker växt med mjukt mönstrade blad i grönt, krämvitt och ibland rosa toner som ger hemmet en lugn och stilren känsla. Den trivs bäst i ljust läge och vill ha jämn vattning utan att stå i blöt jord.</p>
+                <p class="product-price">130:-</p>
+                <button class="btn" onclick="addToBasket(this, '003', 'Mossranka', 130, 'assets/produkt3.webp')">Lägg i varukorg</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p class="footer-logo">
+                <img src="assets/logo.svg" alt="Starka Rötter logotyp">
+            </p>
+            <p class="footer-copy">Ardalan Sale<br>Mittuniversitet<br>Webbutveckling HT25<br>DT200G</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/webshop.js"></script>
+</body>
+</html>

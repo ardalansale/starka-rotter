@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ginsengfikus - Starka Rötter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="Starka Rötter logotyp">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="om.html">Om Oss</a></li>
+                <li><a href="produkter.html">Produkter</a></li>
+                <li>
+                <a href="varukorg.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="small-basket"></span>
+                </a>
+                </li>
+            </ul>
+
+            <button class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobilmeny -->
+        <ul class="mobile-menu" id="mobile-menu">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="om.html">Om Oss</a></li>
+            <li><a href="produkter.html">Produkter</a></li>
+            <li><a href="varukorg.html"><i class="fa-solid fa-cart-shopping"></i> Varukorg <span id="small-basket-mobile"></span></a></li>
+        </ul>
+    </nav>
+    <main class="product-page">
+        <div class="product-detail">
+            <picture>
+                <source srcset="assets/produkt4.webp" type="image/webp">
+                <img src="assets/produkt4.jpg" alt="Bild på en Ginsengfikus">
+            </picture>
+
+            <div class="product-info">
+                <h1>Ginsengfikus</h1>
+                <p class="product-latin"><em>Ficus microcarpa</em></p>
+                <p>En karaktärsfull växt med tjocka, skulpturala rötter och ett frodigt bladverk som ger hemmet en unik och naturlig känsla. Den trivs bäst i ljust läge och vill ha lätt fuktig jord utan att stå i vatten.</p>
+                <p class="product-price">130:-</p>
+                <button class="btn" onclick="addToBasket(this, '004', 'Ginsengfikus', 130, 'assets/produkt4.webp')">Lägg i varukorg</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p class="footer-logo">
+                <img src="assets/logo.svg" alt="Starka Rötter logotyp">
+            </p>
+            <p class="footer-copy">Ardalan Sale<br>Mittuniversitet<br>Webbutveckling HT25<br>DT200G</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/webshop.js"></script>
+</body>
+</html>

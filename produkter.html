@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkter - Starka Rötter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="Starka Rötter logotyp">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="om.html">Om Oss</a></li>
+                <li><a href="produkter.html">Produkter</a></li>
+                <li>
+                <a href="varukorg.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="small-basket"></span>
+                </a>
+                </li>
+            </ul>
+
+            <button class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobilmeny -->
+        <ul class="mobile-menu" id="mobile-menu">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="om.html">Om Oss</a></li>
+            <li><a href="produkter.html">Produkter</a></li>
+            <li><a href="varukorg.html"><i class="fa-solid fa-cart-shopping"></i> Varukorg <span id="small-basket-mobile"></span></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="products-page">
+            <h2>Våra produkter</h2>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <a href="produkt1.html">
+                        <picture>
+                            <source srcset="assets/produkt1.webp" type="image/webp">
+                            <img src="assets/produkt1.jpg" alt="En bild på en Fiolfikus">
+                        </picture>
+                    </a>
+                    <p class="product-name">Fiolfikus</p>
+                    <p class="product-price">130:-</p>
+                    <button class="btn btn-small" onclick="addToBasket(this, '001', 'Fiolfikus', 130, 'assets/produkt1.webp')">Lägg till</button>
+                </div>
+
+                <div class="product-card">
+                    <a href="produkt2.html">
+                        <picture>
+                            <source srcset="assets/produkt2.webp" type="image/webp">
+                            <img src="assets/produkt2.jpg" alt="En bild på en Tineke">
+                        </picture>
+                    </a>
+                    <p class="product-name">Tineke</p>
+                    <p class="product-price">130:-</p>
+                    <button class="btn btn-small" onclick="addToBasket(this, '002', 'Tineke', 130, 'assets/produkt2.webp')">Lägg till</button>
+                </div>
+
+                <div class="product-card">
+                    <a href="produkt3.html">
+                        <picture>
+                            <source srcset="assets/produkt3.webp" type="image/webp">
+                            <img src="assets/produkt3.jpg" alt="en bild på en Mossranka">
+                        </picture>
+                    </a>
+                    <p class="product-name">Mossranka</p>
+                    <p class="product-price">130:-</p>
+                    <button class="btn btn-small" onclick="addToBasket(this, '003', 'Mossranka', 130, 'assets/produkt3.webp')">Lägg till</button>
+                </div>
+
+                <div class="product-card">
+                    <a href="produkt4.html">
+                        <picture>
+                            <source srcset="assets/produkt4.webp" type="image/webp">
+                            <img src="assets/produkt4.jpg" alt="Bild på en Ginsengfikus">
+                        </picture>
+                    </a>
+                    <p class="product-name">Ginsengfikus</p>
+                    <p class="product-price">130:-</p>
+                    <button class="btn btn-small" onclick="addToBasket(this, '004', 'Ginsengfikus', 130, 'assets/produkt4.webp')">Lägg till</button>
+                </div>
+
+                <div class="product-card">
+                    <a href="produkt5.html">
+                        <picture>
+                            <source srcset="assets/produkt5.webp" type="image/webp">
+                            <img src="assets/produkt5.jpg" alt="Bild på en Kimbalafikus">
+                        </picture>
+                    </a>
+                    <p class="product-name">Växt 5</p>
+                    <p class="product-price">130:-</p>
+                    <button class="btn btn-small" onclick="addToBasket(this, '005', 'Kimbalafikus', 130, 'assets/produkt5.webp')">Lägg till</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-inner">
+            <p class="footer-logo">
+                <img src="assets/logo.svg" alt="Starka Rötter logotyp">
+            </p>
+            <p class="footer-copy">Ardalan Sale<br>Mittuniversitet<br>Webbutveckling HT25<br>DT200G</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/webshop.js"></script>
+</body>
+</html>
